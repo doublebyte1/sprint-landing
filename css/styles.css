@@ -10970,12 +10970,17 @@ p {
     margin-right: 0;
   }
 }
+#about .my-div {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #000;
-  background-image: url("../assets/img/features2.png");
+  background-image: url("../assets/img/unsplash2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
