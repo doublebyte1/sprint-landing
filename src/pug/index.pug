@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title OGC API Features
+        title Open Software and Standards Code Sprint
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -36,15 +36,15 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
-                            a.nav-link(href='#services') Why
+                            a.nav-link(href='#about') About
                         li.nav-item
-                            a.nav-link(href='#portfolio') How
+                            a.nav-link(href='#portfolio') Tracks
                         li.nav-item
-                            a.nav-link(href='#about') In Action
+                            a.nav-link(href='#about') Speakers
                         li.nav-item
-                            a.nav-link(href='#team') Get Started
+                            a.nav-link(href='#team') FAQ
                         li.nav-item
-                            a.nav-link(href='#contact') Get Involved
+                            a.nav-link(href='#contact') Sponsors
                 a(href='https://github.com/opengeospatial/ogc-features-website')
                     img(style='position: absolute; top: 0; right: 0; border: 0;' src='https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png' alt='Fork me on GitHub')
 
@@ -53,18 +53,31 @@ html(lang='en')
         // Masthead
         header.masthead
             .container
-                .masthead-heading.text-uppercase OGC API Features
-                .masthead-subheading Querying geospatial data on the web
+                .masthead-heading.text-uppercase Open Software and Standards Code Sprint
+                .masthead-subheading  Brought to you by OGC, OSGeo and ASF 
                 //- a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
                 //- a.btn.btn-primary.btn-xl.text-uppercase(href='#team') Get Started
 
                 
-                a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
-                a.btn.btn-primary.btn-xl.text-uppercase(href='#team') Get Started
+                a.btn.btn-primary.btn-xl.text-uppercase(href='#about') Tell Me More
+                a.btn.btn-primary.btn-xl.text-uppercase(href='#team') Apply
 
 
+        // About
+        section#about.page-section
+            .container
+                .my-div
+                    .text-center
+                        h2.section-heading.text-uppercase About
+                    .text-left
+                            p.text-muted A Code Sprint is a three day event, 
+                                | where dozens of developers from around the world
+                                | come together to work on their projects.
+                                | The goal of the code sprint is to support the development of new applications and open standards,
+                                | as well as creating awareness about the standards.
+                                | Currently, we are planning to host the code sprints as a virtual events.
 
-
+                
         // Services
         section#services.page-section
             .container
@@ -95,48 +108,6 @@ html(lang='en')
                             | You can start using the OGC API Features specification today, by tapping into one of the 
                             a(href='#implementations') existing server or client implementations.
 
-        // Portfolio Grid
-        section#portfolio.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Overview
-                    h3.section-subheading.text-muted OGC API Features provides access to collections of geospatial data.
-                    img(src='assets/img/overview.png', title='Source: https://demo.ldproxy.net/daraa', alt='..')
-                .text-left
-                    ul
-                        li
-                            h4 Get collections
-                            p.text-muted Lists the collections of data on the server that can be queried, and each describes basic information about the geospatial data collection, like its id and description, as well as the spatial and temporal extents of all the data contained.
-                        li
-                            h4 Get items
-                            p.text-muted Requests all the data in a given collection. The response format (typically HTML or a GeoJSON feature collection, but GML is supported, too, and extensions can easily supply others) is determined using HTTP content negotiation.
-                        li
-                            h4 Get feature
-                            p.text-muted Returns a single 'feature' - something in the real-world (a building, a stream, a county, etc.) that typically is described by a geometry plus other properties. This provides a stable, canonical URL to link to the 'thing'.
-
-                p.text-muted If you are interested in finding out how-to use other coordinate reference systems, you can 
-                    a(href='https://github.com/opengeospatial/ogcapi-features/tree/master/extensions/crs' target="_blank") read this
-
-                    |. You can find 
-                    a(href='https://ogcapi.ogc.org/features/' target="_blank") here
-                    
-                    //- |. You can also read 
-                    //- a(href='https://docs.ogc.org/is/17-069r3/17-069r3.html' target="_blank") part 1
-                    //- | and 
-                    //- a(href='https://docs.ogc.org/is/18-058/18-058.html' target="_blank") part 2
-                    | links for different parts of the spec and explore it using 
-                    a(href='https://app.swaggerhub.com/apis/cportele/ogcapi-features-1-example1/1.0.0' target="_blank") Swagger
-                    |.
-                    
-
-        // About
-        section#about.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase See it In Action
-                    h3.section-subheading.text-muted This is a list of demo server implementations, that provide sample data. Please
-                        a(href='mailto:jsimoes@ogc.org') get in touch
-                        |, if you would like to add your server to the list.
                        
 
                 .row
