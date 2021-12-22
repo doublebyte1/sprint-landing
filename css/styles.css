@@ -10,6 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.cs");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10880,6 +10881,55 @@ p {
   margin-bottom: 4rem;
 }
 
+.countdown_timer {
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0;
+  border-color: #333333;
+  border-width: 0;
+  border-style: none;
+}
+
+.fcountdown-timer {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+.countdown_timer .fcountdown-timer {
+  color: white;
+  font-size: 25px;
+  font-family: "Open Sans", monospace;
+  font-weight: 700;
+}
+
+.mt-module {
+  box-sizing: border-box;
+}
+
+.mt-module > .mt-element {
+  text-align: center;
+  position: relative;
+}
+
+.mt-row .mt-module {
+  position: relative;
+  box-sizing: content-box;
+  min-height: 1px;
+  padding-right: 0;
+  padding-left: 0;
+  background-position: center;
+}
+
+.mt-module .fcountdown-timer {
+  width: auto;
+  display: inline-block;
+}
+
+.carousel-inner img {
+  height: 100%;
+}
+
 @media (min-width: 768px) {
   section {
     padding: 9rem 0;
@@ -10980,7 +11030,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #000;
-  background-image: url("../assets/img/unsplash2.jpg");
+  background-image: url("../assets/img/open.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
