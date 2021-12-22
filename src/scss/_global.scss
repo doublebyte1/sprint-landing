@@ -42,6 +42,56 @@ p {
     }
 }
 
+.countdown_timer {
+    padding: 0 15px;
+    box-sizing:border-box;
+    margin: 0;
+    border-color:rgb(51, 51, 51);
+    border-width:0;
+    border-style:none;
+}
+
+.fcountdown-timer {
+    text-align:center;
+    font-size:60px;
+    color: rgb(255,255,255);
+}
+
+.countdown_timer .fcountdown-timer {
+    color: rgb(255,255,255);
+    font-size:25px;
+    font-family: 'Open Sans', monospace;
+    font-weight:700;
+}
+
+.mt-module {
+    box-sizing:border-box;
+}
+
+.mt-module > .mt-element {
+    text-align:center;
+    position:relative;
+}
+
+.mt-row .mt-module {
+    position: relative;
+    box-sizing:content-box;
+    min-height: 1px;
+    padding-right: 0;
+    padding-left: 0;
+    background-position: center;
+}
+
+.mt-module .fcountdown-timer {
+    width: auto;
+    display: inline-block;
+}
+
+.carousel-inner img {
+    height: 100%;
+
+  }
+
 // Increase the padding on sections when screen size is greater
 // than the medium breakpoint (set by Bootstrap)
 
