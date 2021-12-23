@@ -29,8 +29,10 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
-                a.navbar-brand(href='#page-top') HOME
+                //- a.navbar-brand(href='#page-top') Home
+                a.navbar-brand March, 1-3 2021
                     //img(src='assets/img/navbar-logo.svg', alt='...')
+  
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ms-1
@@ -46,19 +48,17 @@ html(lang='en')
                             a.nav-link(href='#faq') FAQ
                         li.nav-item
                             a.nav-link(href='#sponsors') Sponsors
-                a(href='https://github.com/opengeospatial/ogc-features-website')
+                a(href='https://github.com/opengeospatial/sprint-landing')
                     img(style='position: absolute; top: 0; right: 0; border: 0;' src='https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png' alt='Fork me on GitHub')
-
-
 
         // Masthead
         header.masthead
             .container
                 .masthead-heading.text-uppercase Open Software and Standards Code Sprint
-                .masthead-subheading  Brought to you by OGC, OSGeo and ASF 
-                //- a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
-                //- a.btn.btn-primary.btn-xl.text-uppercase(href='#team') Get Started
-
+                
+                .masthead-subheading 
+                    i.fas.fa-plug
+                    | Brought to you by OGC, OSGeo and ASF 
                 
                 a.btn.btn-primary.btn-xl.text-uppercase(href='#about') Tell Me More
                 a.btn.btn-primary.btn-xl.text-uppercase(href='#team') Register
@@ -77,7 +77,7 @@ html(lang='en')
                                 | The main goals of this code sprint are to support the development open standards for geospatial informations,
                                 | and to support the development of free and open source software which implements those standards, as well as creating
                                 | awareness about the standards and software projects.
-                                | The code sprint is hosted by the Open Geospatial Consortium (OGC), The Open Geospatial Foundation (OSGeo) and 
+                                | This code sprint is hosted by the Open Geospatial Consortium (OGC), The Open Geospatial Foundation (OSGeo) and 
                                 | Apache Software Foundation (ASF).
 
                     .row.text-center
@@ -115,21 +115,6 @@ html(lang='en')
 
         section#speakers.page-section.bg-dark
 
-            //- #carouselExampleControls.carousel.slide(data-bs-ride='carousel')
-            //-     .carousel-inner
-            //-         .carousel-item.active
-            //-             img(src='assets/img/clemens.jpg' alt='...')
-            //-         .carousel-item
-            //-             img(src='assets/img/gobe.jpeg' alt='...')
-            //-         .carousel-item
-            //-             img(src='assets/img/tom.jpeg' alt='...')
-            //-     button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev')
-            //-         span.carousel-control-prev-icon(aria-hidden='true')
-            //-         span.visually-hidden Previous
-            //-     button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='next')
-            //-         span.carousel-control-next-icon(aria-hidden='true')
-            //-         span.visually-hidden Next
-
             .container
                 .text-center.text-white
                     h2.section-heading.text-uppercase Speakers
@@ -164,40 +149,105 @@ html(lang='en')
                             span.visually-hidden Next
 
 
-
-
-
-            //-         #demo.carousel.slide(data-ride='carousel')
-            //-             // Indicators
-            //-             ul.carousel-indicators
-            //-                 li.active(data-target='#demo' data-slide-to='0')
-            //-                 li(data-target='#demo' data-slide-to='1')
-            //-                 li(data-target='#demo' data-slide-to='2')
-            //-             // The slideshow
-            //-             .carousel-inner
-            //-                 .carousel-item.active
-            //-                     img.rounded-circle(src='assets/img/clemens.jpg' alt='Clemens' height='200' )
-            //-                     h3 Clemens Portele
-            //-                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            //-                 .carousel-item
-            //-                     img.rounded-circle(src='assets/img/gobe.jpeg' alt='Gobe' height='200')
-            //-                     h3 Gobe Hobona
-            //-                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            //-                 .carousel-item
-            //-                     img.rounded-circle(src='assets/img/tom.jpeg' alt='Tom' height='200' )
-            //-                     h3 Tom Kralidis
-            //-                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            //-             // Left and right controls
-            //-             a.carousel-control-prev(href='#demo' role='button' data-slide='prev')
-            //-                 span.carousel-control-prev-icon
-            //-             a.carousel-control-next(href='#demo' role='button' data-slide='next')
-            //-                 span.carousel-control-next-icon
-
-
         section#faq.page-section.bg-light
             .container
                 .text-center
                     h2.section-heading.text-uppercase FAQ
+                    .container
+                    .row.row-cols-2
+                        .col
+                            h2 General
+                            #accordion.accordion
+                                .accordion-item
+                                    h2#one.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-one' aria-expanded='false' aria-controls='collapse-one')
+                                            | What is a code sprint?
+                                    #collapse-one.accordion-collapse.collapse(aria-labelledby='one' data-bs-parent='#accordion')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+                                .accordion-item
+                                    h2#two.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-two' aria-expanded='false' aria-controls='collapse-two')
+                                            | When is the code sprint?
+                                    #collapse-two.accordion-collapse.collapse(aria-labelledby='two' data-bs-parent='#accordion')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+                                .accordion-item
+                                    h2#three.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-three' aria-expanded='false' aria-controls='collapse-three')
+                                            | What is the cost?
+                                    #collapse-three.accordion-collapse.collapse(aria-labelledby='three' data-bs-parent='#accordion')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+                                .accordion-item
+                                    h2#four.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-four' aria-expanded='false' aria-controls='collapse-four')
+                                            | Where is the schedule?
+                                    #collapse-four.accordion-collapse.collapse(aria-labelledby='four' data-bs-parent='#accordion')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+                                .accordion-item
+                                    h2#five.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-five' aria-expanded='false' aria-controls='collapse-five')
+                                            | But I don't know anything about standards and I am not an expert on geospatial!
+                                    #collapse-five.accordion-collapse.collapse(aria-labelledby='five' data-bs-parent='#accordion')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+                                .accordion-item
+                                    h2#six.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-six' aria-expanded='false' aria-controls='collapse-six')
+                                            | I have more questions!
+                                    #collapse-six.accordion-collapse.collapse(aria-labelledby='six' data-bs-parent='#accordion')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+
+                        .col
+                           h2 Tracks
+                           #accordion1.accordion
+                                .accordion-item
+                                    h2#seven.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-seven' aria-expanded='false' aria-controls='collapse-seven')
+                                            | What are the sprint tracks?
+                                    #collapse-seven.accordion-collapse.collapse(aria-labelledby='seven' data-bs-parent='#accordion1')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+                                .accordion-item
+                                    h2#eight.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-eight' aria-expanded='false' aria-controls='collapse-eight')
+                                            | How can I find a mentor?
+                                    #collapse-eight.accordion-collapse.collapse(aria-labelledby='eight' data-bs-parent='#accordion1')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+ 
+                        .col
+                           h2 Logistics
+                           #accordion2.accordion
+                                .accordion-item
+                                    h2#nine.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-nine' aria-expanded='false' aria-controls='collapse-nine')
+                                            | How does a virtual code sprint work?
+                                    #collapse-nine.accordion-collapse.collapse(aria-labelledby='nine' data-bs-parent='#accordion2')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+
+                        .col
+                           h2 Registration
+                           #accordion3.accordion
+                                .accordion-item
+                                    h2#ten.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-ten' aria-expanded='false' aria-controls='collapse-ten')
+                                            | Can I attend?
+                                    #collapse-ten.accordion-collapse.collapse(aria-labelledby='ten' data-bs-parent='#accordion3')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+                                .accordion-item
+                                    h2#eleven.accordion-header
+                                        button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-eleven' aria-expanded='false' aria-controls='collapse-eleven')
+                                            | When is registration?
+                                    #collapse-eleven.accordion-collapse.collapse(aria-labelledby='eleven' data-bs-parent='#accordion3')
+                                        .accordion-body
+                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+
 
         section#sponsors.page-section
             .container
@@ -279,9 +329,12 @@ html(lang='en')
 
 
         // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js')
   
         //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js')
+  
+  
+
         //- script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
 
 
