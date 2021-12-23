@@ -113,58 +113,86 @@ html(lang='en')
                         p.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
 
-        section#speakers.page-section
+        section#speakers.page-section.bg-dark
 
+            //- #carouselExampleControls.carousel.slide(data-bs-ride='carousel')
+            //-     .carousel-inner
+            //-         .carousel-item.active
+            //-             img(src='assets/img/clemens.jpg' alt='...')
+            //-         .carousel-item
+            //-             img(src='assets/img/gobe.jpeg' alt='...')
+            //-         .carousel-item
+            //-             img(src='assets/img/tom.jpeg' alt='...')
+            //-     button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev')
+            //-         span.carousel-control-prev-icon(aria-hidden='true')
+            //-         span.visually-hidden Previous
+            //-     button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='next')
+            //-         span.carousel-control-next-icon(aria-hidden='true')
+            //-         span.visually-hidden Next
 
             .container
-                .text-center
+                .text-center.text-white
                     h2.section-heading.text-uppercase Speakers
 
-                    //- #myCarousel.carousel.slide(data-ride='carousel')
-                    //-     // Indicators
-                    //-     ol.carousel-indicators
-                    //-         li.active(data-target='#myCarousel' data-slide-to='0')
-                    //-         li(data-target='#myCarousel' data-slide-to='1')
-                    //-         li(data-target='#myCarousel' data-slide-to='2')
-                    //-     // Wrapper for slides
-                    //-     .carousel-inner
-                    //-         .item.active
-                    //-             img(src='assets/img/logos/nrcan.svg' alt='Los Angeles' style='width:100%;')
-                    //-         .item
-                    //-             img(src='assets/img/logos/ogc.svg' alt='Chicago' style='width:100%;')
-                    //-         .item
-                    //-             img(src='assets/img/logos/logo-osgeo.svg' alt='New york' style='width:100%;')
-                    //-     // Left and right controls
-                    //-     a.left.carousel-control(href='#myCarousel' data-slide='prev')
-                    //-         span.glyphicon.glyphicon-chevron-left
-                    //-         span.sr-only Previous
-                    //-     a.right.carousel-control(href='#myCarousel' data-slide='next')
-                    //-         span.glyphicon.glyphicon-chevron-right
-                    //-         span.sr-only Next
-
-                    #demo.carousel.slide(data-ride='carousel')
-                        // Indicators
-                        ul.carousel-indicators
-                            li.active(data-target='#demo' data-slide-to='0')
-                            li(data-target='#demo' data-slide-to='1')
-                            li(data-target='#demo' data-slide-to='2')
-                        // The slideshow
+                    #carouselExampleControls.carousel.slide(data-bs-ride='carousel')
+                        .carousel-indicators
+                            button.active(type='button' data-bs-target='#carouselExampleControls' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                            button(type='button' data-bs-target='#carouselExampleControls' data-bs-slide-to='1' aria-label='Slide 2')
+                            button(type='button' data-bs-target='#carouselExampleControls' data-bs-slide-to='2' aria-label='Slide 3')
                         .carousel-inner
                             .carousel-item.active
-
-                                img.rounded-circle(src='assets/img/angelo.jpeg' alt='Chicago' height='300' )
-
+                                img.rounded-circle(src='assets/img/clemens.jpg' alt='Clemens' height='200' )
+                                .carousel-caption.d-none.d-md-block
+                                    h3 Clemens Portele
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             .carousel-item
-                                img.rounded-circle(src='assets/img/tom.jpeg' alt='Chicago' height='300' )
+                                img.rounded-circle(src='assets/img/gobe.jpeg' alt='Gobe' height='200')
+                                .carousel-caption.d-none.d-md-block
+                                    h3 Gobe Hobona
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             .carousel-item
-                                img.rounded-circle(src='assets/img/clemens.jpg' alt='New York' height='300')
-                        // Left and right controls
-                        a.left.carousel-control(href='#myCarousel' data-slide='prev')
-                            span.glyphicon.glyphicon-chevron-left
-                            span.sr-only Previous
-                        a.right.carousel-control(href='#myCarousel' data-slide='next')
-                            span.glyphicon.glyphicon-chevron-right
-                            span.sr-only Next
+                                img.rounded-circle(src='assets/img/tom.jpeg' alt='Tom' height='200' )
+                                .carousel-caption.d-none.d-md-block                                
+                                    h3 Tom Kralidis
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+                        button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev')
+                            span.carousel-control-prev-icon(aria-hidden='true')
+                            span.visually-hidden Previous
+                        button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='next')
+                            span.carousel-control-next-icon(aria-hidden='true')
+                            span.visually-hidden Next
+
+
+
+
+
+            //-         #demo.carousel.slide(data-ride='carousel')
+            //-             // Indicators
+            //-             ul.carousel-indicators
+            //-                 li.active(data-target='#demo' data-slide-to='0')
+            //-                 li(data-target='#demo' data-slide-to='1')
+            //-                 li(data-target='#demo' data-slide-to='2')
+            //-             // The slideshow
+            //-             .carousel-inner
+            //-                 .carousel-item.active
+            //-                     img.rounded-circle(src='assets/img/clemens.jpg' alt='Clemens' height='200' )
+            //-                     h3 Clemens Portele
+            //-                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            //-                 .carousel-item
+            //-                     img.rounded-circle(src='assets/img/gobe.jpeg' alt='Gobe' height='200')
+            //-                     h3 Gobe Hobona
+            //-                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            //-                 .carousel-item
+            //-                     img.rounded-circle(src='assets/img/tom.jpeg' alt='Tom' height='200' )
+            //-                     h3 Tom Kralidis
+            //-                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            //-             // Left and right controls
+            //-             a.carousel-control-prev(href='#demo' role='button' data-slide='prev')
+            //-                 span.carousel-control-prev-icon
+            //-             a.carousel-control-next(href='#demo' role='button' data-slide='next')
+            //-                 span.carousel-control-next-icon
+
 
         section#faq.page-section.bg-light
             .container
@@ -251,14 +279,15 @@ html(lang='en')
 
 
         // Bootstrap core JS
-        //script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js')
-        //script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js')
-
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js')
+  
         //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
         //- script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
-        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
-        //- script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js')
-        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+
+
+        //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+        //- script(src='https:///maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+
 
 
         // Core theme JS

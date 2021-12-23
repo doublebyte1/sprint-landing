@@ -88,9 +88,16 @@ p {
 }
 
 .carousel-inner img {
-    height: 100%;
+    height: 300px;
 
   }
+
+.carousel-caption {
+position: relative;
+left: auto;
+right: auto;
+}
+
 
 // Increase the padding on sections when screen size is greater
 // than the medium breakpoint (set by Bootstrap)

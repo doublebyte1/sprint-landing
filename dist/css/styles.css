@@ -10,7 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.cs");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10927,7 +10927,13 @@ p {
 }
 
 .carousel-inner img {
-  height: 100%;
+  height: 300px;
+}
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
 }
 
 @media (min-width: 768px) {
