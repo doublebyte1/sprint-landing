@@ -10936,6 +10936,10 @@ p {
   right: auto;
 }
 
+.accordion {
+  padding: 11px;
+}
+
 @media (min-width: 768px) {
   section {
     padding: 9rem 0;
