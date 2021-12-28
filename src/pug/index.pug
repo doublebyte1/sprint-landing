@@ -325,7 +325,25 @@ html(lang='en')
                         a.btn.btn-dark.btn-social.mx-2(href='https://www.linkedin.com/company/open-geospatial-consortium')
                             i.fab.fa-linkedin-in
                     .col-lg-4.text-lg-end
-                        a.link-dark.text-decoration-none.me-3(data-bs-toggle='modal', data-bs-target='#portfolioModal1') Privacy Policy
+                        //- a.link-dark.text-decoration-none.me-3(data-bs-toggle='modal', data-bs-target='#portfolioModal1') Privacy Policy
+                        a.link-dark.text-decoration-none.me-3(data-bs-toggle='modal', data-bs-target='#exampleModal') Privacy Policy
+
+
+                        // Modal
+                        #exampleModal.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                            .modal-dialog
+                                .modal-content
+                                    .modal-header
+                                        h5#exampleModalLabel.modal-title Privacy Policy
+                                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .modal-body
+                                        | OGC Code Sprints do not log or share your personal information.
+                                        | We don't track you. We don't profile you. Period
+                                    .modal-footer
+                                        button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+
+
+
                     //-     a.link-dark.text-decoration-none(href='#!') Terms of Use
 
 
