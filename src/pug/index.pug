@@ -119,22 +119,40 @@ html(lang='en')
                             button.active(type='button' data-bs-target='#carouselExampleControls' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
                             button(type='button' data-bs-target='#carouselExampleControls' data-bs-slide-to='1' aria-label='Slide 2')
                             button(type='button' data-bs-target='#carouselExampleControls' data-bs-slide-to='2' aria-label='Slide 3')
+
+                        
                         .carousel-inner
                             .carousel-item.active
-                                img.rounded-circle(src='assets/img/clemens.jpg' alt='Clemens' height='200' )
+                                img.rounded-circle(src=speakers[0].src alt=speakers[0].alt height='200' )
                                 .carousel-caption.d-none.d-md-block
-                                    h3 Clemens Portele
-                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            .carousel-item
-                                img.rounded-circle(src='assets/img/gobe.jpeg' alt='Gobe' height='200')
-                                .carousel-caption.d-none.d-md-block
-                                    h3 Gobe Hobona
-                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            .carousel-item
-                                img.rounded-circle(src='assets/img/tom.jpeg' alt='Tom' height='200' )
-                                .carousel-caption.d-none.d-md-block                                
-                                    h3 Tom Kralidis
-                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    h3 #{speakers[0].h3}
+                                    p #{speakers[0].p}
+
+                            - for (var i = 1; i < speakers.length; ++i) {
+                                .carousel-item
+                                    img.rounded-circle(src=speakers[i].src alt=speakers[i].alt height='200' )
+                                    .carousel-caption.d-none.d-md-block
+                                        h3 #{speakers[i].h3}
+                                        p #{speakers[i].p} 
+                            - }
+
+
+                        //- .carousel-inner
+                        //-     .carousel-item.active
+                        //-         img.rounded-circle(src='assets/img/clemens.jpg' alt='Clemens' height='200' )
+                        //-         .carousel-caption.d-none.d-md-block
+                        //-             h3 Clemens Portele
+                        //-             p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        //-     .carousel-item
+                        //-         img.rounded-circle(src='assets/img/gobe.jpeg' alt='Gobe' height='200')
+                        //-         .carousel-caption.d-none.d-md-block
+                        //-             h3 Gobe Hobona
+                        //-             p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        //-     .carousel-item
+                        //-         img.rounded-circle(src='assets/img/tom.jpeg' alt='Tom' height='200' )
+                        //-         .carousel-caption.d-none.d-md-block                                
+                        //-             h3 Tom Kralidis
+                        //-             p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
                         button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev')
                             span.carousel-control-prev-icon(aria-hidden='true')
@@ -300,7 +318,7 @@ html(lang='en')
                 .row.text-center
 
                     .mt-module.col-6.col-md-6.col-sm-12.col-xs-12.countdown_timer
-                    .mt-element(data-element-type='countdown_timer' data-date='2022/03/02 00:00:00')
+                    .mt-element(data-element-type='countdown_timer' data-date=`${start_date}`)
                         .fcountdown-timer 256 days 23:59:59
                         
         // Footer
