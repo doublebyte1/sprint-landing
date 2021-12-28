@@ -1,6 +1,7 @@
 doctype html
-html(lang='en')
+include includes/march_2022.pug
 
+html(lang='en')
     head
 
         meta(charset='utf-8')
@@ -8,7 +9,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Open Software and Standards Code Sprint
+        title #{title}
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -30,7 +31,7 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
                 //- a.navbar-brand(href='#page-top') Home
-                a.navbar-brand March, 1-3 2021
+                a.navbar-brand #{date}
                     //img(src='assets/img/navbar-logo.svg', alt='...')
   
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
@@ -55,14 +56,14 @@ html(lang='en')
         // Masthead
         header.masthead
             .container
-                .masthead-heading.text-uppercase Open Software and Standards Code Sprint
+                .masthead-heading.text-uppercase #{title}
                 
                 .masthead-subheading 
                     i.fas.fa-plug
-                    | Brought to you by OGC, OSGeo and ASF 
+                    | #{tagline}
                 
                 a.btn.btn-primary.btn-xl.text-uppercase(href='#about') Tell Me More
-                a.btn.btn-primary.btn-xl.text-uppercase(href='#team') Register
+                a.btn.btn-primary.btn-xl.text-uppercase(href=`${registration_link}`) Register
 
 
         // About
@@ -72,14 +73,7 @@ html(lang='en')
                     .text-center
                         h2.section-heading.text-uppercase About
                     .text-left
-                            p.text-muted A Code Sprint is a three day virtual event, 
-                                | where dozens of developers from around the world
-                                | come together to code and share their ideas.
-                                | The main goals of this code sprint are to support the development open standards for geospatial informations,
-                                | and to support the development of free and open source software which implements those standards, as well as creating
-                                | awareness about the standards and software projects.
-                                | This code sprint is hosted by the Open Geospatial Consortium (OGC), The Open Geospatial Foundation (OSGeo) and 
-                                | Apache Software Foundation (ASF).
+                            p.text-muted #{about}
 
                     .row.text-center
                             .col-md-4
