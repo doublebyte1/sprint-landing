@@ -3,7 +3,7 @@
 
 Publish to GitHub Pages with:
 
-`git subtree push --prefix dist origin gh-pages`
+`git subtree push --prefix dist old gh-pages`
 
 Available at:
 
