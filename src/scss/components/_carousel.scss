@@ -15,7 +15,8 @@
         	background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
         	opacity: 0;
         	will-change:opacity;
-        	transition: opacity 250ms ease-in-out;
+        	//transition: opacity 250ms ease-in-out;
+			transition: transform 2s ease, opacity .5s ease-out;
         }
     }
 
