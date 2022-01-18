@@ -74,7 +74,9 @@ html(lang='en')
                         h2.section-heading.text-uppercase About
                     .text-left
                             p.text-muted #{about}
-
+                            p.text-muted You can find more details about the code sprint on the event's
+                                a(href=`${wiki_link}`) wiki page 
+                                | .
                     .row.text-center
                             .col-md-4
                                 a(href='#!')
@@ -98,16 +100,20 @@ html(lang='en')
                             i.fas.fa-circle.fa-stack-2x.text-primary
                             i.fas.fa-laptop.fa-stack-1x.fa-inverse
                         h4.my-3 Main Track
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+                        .tracks-body.text-muted                             
+                            p On the main track, developers have the opportunity to contribute to the development of the standards, either by working on implementations of the standards or on the actual standards.
+                            p They will be working at their own pace, developing code or in other related activities such as testing, compliance, submitting issues or documentation.
+                            p Discussion is encouraged at the #General channel (text), or at the #Breakout Room (voice) and we will meet at given checkpoints during the day, at the #Main Stage. 
+                            p At the end of the code sprint, everyone one will have the chance to demonstrate what they have been working on, during the demo session.
                     .col
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
                             i.fas.fa-graduation-cap.fa-stack-1x.fa-inverse
                         h4.my-3 Mentor Stream
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
-
+                        .tracks-body.text-muted
+                            p We acknowledge that not everyone may be familiar or feel comfortable to contribute to the standards yet, so we have curated a parallel track for newcomers.
+                            p On the mentor stream, developers will have the opportunity to learn more about the standards, and give their first steps in using them. The stream will include community led tutorials, which will take place at the #Mentor Room (voice) and access to mentoring on the  #find-a-mentor and #mentor-room (text). 
+                            p If you don’t know where to start, you probably should check-out the Mentor Stream!
         section#speakers.page-section.bg-dark
 
             .container
@@ -211,7 +217,9 @@ html(lang='en')
                                             | What are the sprint tracks?
                                     #collapse-seven.accordion-collapse.collapse(aria-labelledby='seven' data-bs-parent='#accordion1')
                                         .accordion-body
-                                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat sapien est. Integer non tempus est. Vivamus consectetur condimentum urna. Phasellus vehicula libero nibh, sit amet varius sapien mattis ut. Duis purus metus, bibendum non leo vitae, auctor gravida ipsum. Nulla nec augue eget mi posuere dapibus. Maecenas vitae est vel massa convallis euismod quis at turpis.
+                                            p The sprint includes two parallel tracks: the main track and the mentor stream. 
+                                            | On the main track, developers have the opportunity to contribute to the development of the standards, either by working on implementations of the standard or on the standard itself.
+                                            | They will be working at their own pace, developing code or in other related activities such as testing, compliance, submitting issues or documentation. On the mentor stream, they will have the opportunity to learn more about the standards, and give their first steps in using them. The stream will include community led tutorials and access to mentoring.
                                 .accordion-item
                                     h2#eight.accordion-header
                                         button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-eight' aria-expanded='false' aria-controls='collapse-eight')

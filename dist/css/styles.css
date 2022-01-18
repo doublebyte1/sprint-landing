@@ -10951,6 +10951,10 @@ p {
   text-align: left;
 }
 
+.tracks-body {
+  text-align: justify;
+}
+
 @media (min-width: 768px) {
   section {
     padding: 9rem 0;
